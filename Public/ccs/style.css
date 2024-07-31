@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*.urbanist-<uniquifier> {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }*/
+
+  /*paleta de colores*/
+  /*
+--neon-blue: #5465ffff;
+--cornflower-blue: #788bffff;
+--jordy-blue: #9bb1ffff;
+--periwinkle: #bfd7ffff;
+--light-cyan: #e2fdffff;*/
+
+/* Estilos comunes para todo el documento*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: Urbanist, sans-serif;
+    font-size: 16px;
+}
+
+img{
+    border-radius: 5px; 
+    width: fit-content;
+    height: 350px;
+}
+
+/*Estilos header*/
+
+header{
+    padding: 40px;
+    text-align:center;
+    background-image: url(../Images/medalla.jpg);
+    background-repeat:no-repeat;
+    background-size:auto;
+    background-position: left;
+}
+header div{
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 25%;
+    margin-right: 5%;
+    background-color: rgba(0,0,0,0.2);
+    color:black;
+    font-size: 1rem;
+}
+@media (max-width: 800px) {
+    header {
+        background-position: center;
+    }
+}
+
+/* Estilos navbar*/
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #788bffff;
+    position: sticky;
+    top: 0%;
+    z-index: 100;
+}
+
+.navbar a{
+    display: flex;
+    color: black;
+    font-size: 1.1rem;
+    padding: 10px 10px;
+    text-decoration: none;   
+}
+
+.navbar a:hover {
+    background-color:#bfd7ffff ;
+    color: blue;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        position: unset;
+    }
+.navbar a {
+    text-align: center;
+}
+}
+
+/*estilos parte principal*/
+
+@media (max-width: 800px){
+    .Principal{
+        flex-direction: column;
+    }
+}
+
+.Principal {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+aside {
+    flex-basis: 25%;
+    padding: 15px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color:#bfd7ffff;
+}
+
+main {
+    flex-basis: 50%;
+    padding: 50px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    background-color:#e2fdffff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+}
+
+
+/* Estilos Main */
+
+main h2 {
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: black;
+    text-align: center;
+}
+
+main p{
+    font-style: italic;
+    text-align:justify;
+}
+
+/* Estilos Aside */
+
+.aside title{
+    text-decoration:underline;
+}
+@media (max-width: 800px){
+    .image img{
+        width: 60%;
+        height: auto;
+    }
+}
+
+/*Estilos footer*/
+
+footer{
+    padding: 10px;
+    text-align: center;
+    background-color:aqua;
+    color: black;
+}
+
+/*estilos bootstrap*/
+.card-img-top{
+    height: 300px;
+    object-fit:cover;
+    border-radius: 10px;
+}
+
+.card-title{
+    text-align: start;
+}
+
+.leermas {
+    background-color: #bfd7ffff;
+    color: blue;
+    text-decoration: none;
+    padding: 05px;
+    border-radius: 10px;
+    margin:auto;
+    text-align:center;
+    width: fit-content;
+}
+
+main .leerMas:hover {
+    background-color: #bfd7ffff;
+    color: skyblue;
+}
+
+.carousel-inner{
+    display: flex;
+    width: auto;
+}
+
+@media (max-width: 800px){
+.carousel-inner{
+    flex-direction: column;
+}
+}
+/*Estilos Formularios*/
+
+form{
+    padding: 40px;
+    background-color:#e2fdffff ;
+    border: 5 outset #788bffff;
+    text-align: center;
+}
+label{
+    background-color:#5465ffff;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+fieldset{
+    display: grid;
+    grid-template-columns: 25vw 20vw;
+    gap: 10px;
+    margin: auto;
+    width: fit-content;
+    font-size: 1.2rem;;
+    border: 5px double #5465ffff;
+}
+legend{
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+@media (max-widt: 800px){  
+    field set{
+        display: flex;
+        flex-direction: column;
+    }
+}
